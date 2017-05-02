@@ -4,7 +4,7 @@ plan:
     statement: markdowns/part1.md
   - title: Part 2
     statement: markdowns/part2.md
-project:
+projects:
  hands-on:
   root: handson
   runner:
