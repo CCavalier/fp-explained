@@ -7,6 +7,4 @@ plan:
 projects:
  hands-on:
   root: handson
-  runner:
-      name: codingame/sbt-scalatest-runner
-      version: 1.0.0-scala-2.12
+  runner: codingame/sbt-runner:1.0.0
