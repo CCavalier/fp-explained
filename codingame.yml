@@ -7,4 +7,4 @@ plan:
 projects:
  hands-on:
   root: handson
-  runner: fraisse/sbt-runner:1.0.1
+  runner: codingame/sbt-runner:1.0.1
