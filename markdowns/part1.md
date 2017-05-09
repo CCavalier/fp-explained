@@ -27,16 +27,16 @@ In this example, we take a list of ingredients and check if we got everything to
 It seems it doesn't work well: before we execute our code something has changed the ingredients list. 
 The elements of this list are defined as var, but we will prefer to use var, which cannot be modified.
 
-´´´scala
+```scala
 var x = 0
 x = 2 //perfecly right
 
 val y = 10
 y = 8 //will not compile
-
-´´´
+```
 
 Let's try to change it.
 
 @[Check the ingredients list]({"stubs":["/src/main/scala/example/PureFunction.scala", "/src/test/scala/example/TestPureFunction.scala"], "command":"example.TestPureFunction"})
 
+This new code won't compile because we tried to modify an immutable type.
