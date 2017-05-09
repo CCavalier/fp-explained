@@ -27,3 +27,6 @@ So we will separate the account operation from the recipe cost.
 _But, we cannot do application who do nothing!_
 
 Obviously, we don't.
+But we will keep our changes, modification, i/o operation in specific layers, outside our logics.
+Pure function allows to write smaller parts of code, easier to read, and thus easier to maintain.
+
