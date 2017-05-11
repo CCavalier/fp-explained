@@ -1,9 +1,11 @@
 title : Content name
 plan:
-  - title: Part 1
+  - title: What's function is about?
     statement: markdowns/part1.md
-  - title: Part 2
+  - title: A bite of immutability
     statement: markdowns/part2.md
+  - title: Recursion
+    statement: markdowns/part3.md
 projects:
  hands-on:
   root: handson
