@@ -8,7 +8,7 @@ import org.scalatest.{FlatSpec, Matchers}
 class TestTailRecursion extends FlatSpec with Matchers{
   it should "be the fibonnacci list" in {
     System.out.println(Recursion.tailFibonacci(25) )
-    assert(Recursion.fibonacci(List[Int](), 25) == Recursion.tailFibonacci())
+    assert(Recursion.fibonacci(List[Int](), 25) == Recursion.tailFibonacci(25))
     assert(verifyFibonacci(Recursion.tailFibonacci(25)))
   }
 
