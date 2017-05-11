@@ -27,7 +27,7 @@ Tail recursion is a way to build recursion where we don't need to keep each step
 The last think you will do is to call this function.
 
 Let's try to modify our fibonacci suite to be a tail recursion
-@[Implement the fibonnaci as a tail recursion]({"stubs":["/src/main/scala/example/Recursion.scala"], "command":"example.TestRecursion"}, "layout": "aside"})
+@[Implement the fibonnaci as a tail recursion]({"stubs":["/src/main/scala/example/Recursion.scala"], "command":"example.TestRecursion", "layout": "aside"})
 
 Moreover Scala compiler optimize tail recursion, so we really should use it.
 
