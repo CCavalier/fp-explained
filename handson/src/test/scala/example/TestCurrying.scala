@@ -11,18 +11,18 @@ class TestCurrying extends FlatSpec with Matchers {
 
 
   it should "sort alphabetically" in{
-    assert(Hof.sortAlphabetically(ingredients).head == "apple")
-    assert(Hof.sortAlphabetically(ingredients).tail.head == "eggs")
+    assert(Currying.sortAlphabetically(ingredients).head == "apple")
+    assert(Currying.sortAlphabetically(ingredients).tail.head == "eggs")
   }
 
   it should "sort reverse alphabetically" in{
-    assert(Hof.sortReverseAlphabetically(ingredients).head == "tomate")
-    assert(Hof.sortReverseAlphabetically(ingredients).tail.head == "eggs")
+    assert(Currying.sortReverseAlphabetically(ingredients).head == "tomate")
+    assert(Currying.sortReverseAlphabetically(ingredients).tail.head == "eggs")
   }
 
   it should "sort by increasing size" in{
-    assert(Hof.sortIncresingSize(ingredients).head == "eggs")
-    assert(Hof.sortIncresingSize(ingredients).tail.head == "apple")
+    assert(Currying.sortIncreasingSize(ingredients).head == "eggs")
+    assert(Currying.sortIncreasingSize(ingredients).tail.head == "apple")
   }
 
 
