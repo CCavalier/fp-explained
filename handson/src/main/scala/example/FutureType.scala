@@ -1,8 +1,8 @@
 package example
 
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
 import scala.concurrent.duration._
-import scala.concurrent.{Await, Future}
 import scala.util.{Failure, Success}
 
 /**
@@ -34,8 +34,10 @@ object FutureType {
 
   }
 
+  /**
+    * should return the square of the result of the veryLongFunction
+    */
  def callVeryLongFunction(a: Int): Int ={
-   val f = Future[Int](veryLongFunction(a))
-   Await.result(f.map(x => x*x),maxTime)
+  ???
  }
 }
