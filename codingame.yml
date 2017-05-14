@@ -13,7 +13,7 @@ plan:
   - title: NPE no more
     statement: markdowns/part6.md
   - title: Let's think the future
-    statement: markdowns/part6.md
+    statement: markdowns/part7.md
 projects:
  hands-on:
   root: handson
