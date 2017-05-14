@@ -20,4 +20,9 @@ This first example will show you the on complete method: this method is called w
 The only drawback is to cannot collect the data without waiting.
 So let try to complete the second method to return the square of value of the future
 
+```scala
+Await.result 	will wait the return of the future
+future.map(f)	will apply a function to the result of a future
+```
+
 @[Get the value after a long time]({"stubs":["/src/main/scala/example/FutureType.scala"], "command":"example.TestFutureBis", "layout": "aside"})
