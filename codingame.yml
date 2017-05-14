@@ -6,6 +6,8 @@ plan:
     statement: markdowns/part2.md
   - title: Recursion
     statement: markdowns/part3.md
+  - title: Lambda
+    statement: markdowns/part5.md
   - title: Currying
     statement: markdowns/part4.md
 projects:

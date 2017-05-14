@@ -9,10 +9,17 @@ object Currying {
     list.sortWith(cmp)
   }
 
-  def sortAlphabetically(list: List[String]):List[String]= ???
+  def sortAlphabetically(list: List[String]):List[String]= {
+    sort(_<_, list);
+  }
 
-  def sortReverseAlphabetically(list: List[String]):List[String]= ???
+  def sortReverseAlphabetically(list: List[String]):List[String]={
+    sort(_>_, list);
+  }
 
-  def sortIncreasingSize(list: List[String]):List[String]= ???
+  def sortIncreasingSize(list: List[String]):List[String]={
+    sort(_.size<_.size, list);
+  }
+
 
 }
