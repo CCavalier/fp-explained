@@ -10,6 +10,8 @@ plan:
     statement: markdowns/part5.md
   - title: Currying
     statement: markdowns/part4.md
+  - title: NPE no more
+    statement: markdowns/part6.md
 projects:
  hands-on:
   root: handson
