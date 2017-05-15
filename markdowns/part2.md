@@ -1,15 +1,14 @@
 # High Order Funcion
 
 
+In functionnal programming a function is defined has "first order citizen". 
+It means that it has exactly the same properties than other element : it can be affect to a name or not, return as a result or passed in parameter.
 
-Let's have a look to this function:
+It's what we will try now.
+Just implement the greeting function to return "Hello, [name]" if the name is defined, "who are you?" else. 
 
-@[Check the ingredients list]({"stubs":["/src/main/scala/example/PureBoughtIngredients.scala"], "command":"example.TestBought"})
 
+@[Greetings]({"stubs":["/src/main/scala/example/Hof.scala"], "command":"example.TestHof"})
 
-I changed the account of the user by removing the sum of the ingredients of the recipe.
-But if if have more thing to buy, or discount, or if I already got some of the ingredients, this is unapropriated.
-
-So we will separate the account operation from the recipe cost.
 
 
