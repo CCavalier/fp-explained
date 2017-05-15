@@ -8,8 +8,9 @@ import org.scalatest.{FlatSpec, Matchers}
 class TestPureFunction extends FlatSpec with Matchers{
 
   it should "cook a strawberry dessert" in {
-    PureFunction.strawberry = "BlueBerry"
+    //PureFunction.strawberry = "BlueBerry"
     assert(PureFunction.cookDessert(PureFunction.ingredientsList) == "Awesome Strawberry cream", " --  :( I really like strawberries")
-
+    PureFunction.iAlreadyAteStrawberries()
+    assert(PureFunction.tryToCookSomethingWithAGlutton() == "Awesome Strawberry cream", " --  :( I really like strawberries")
   }
 }

@@ -26,6 +26,9 @@ In this example, we take a list of ingredients and check if we got everything to
 
 It seems it doesn't work well: before we execute our code something has changed the ingredients list. 
 The elements of this list are defined as var, but we will prefer to use var, which cannot be modified.
+Moreover mutableList is a specific kind of list who can be modified. 
+
+Let's rewrite it to not allow someone to eat all the strawberries
 
 ```scala
 var x = 0
@@ -35,8 +38,8 @@ val y = 10
 y = 8 //will not compile
 ```
 
-Let's try to change it.
+Let's try to change it: the list must be a List (immutable) and a value
 
 @[Check the ingredients list]({"stubs":["/src/main/scala/example/PureFunction.scala", "/src/test/scala/example/TestPureFunction.scala"], "command":"example.TestPureFunction"})
 
-This new code won't compile because we tried to modify an immutable type.
+In this way no one can change the ingredients of the recipe: if I want some strawberries, I have to buy it.

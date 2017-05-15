@@ -1,5 +1,7 @@
 package example
 
+import scala.collection.mutable
+
 /**
   * Created by charlotte on 03/05/17.
   */
@@ -8,12 +10,16 @@ object PureFunction {
 
   var mascarpone = "Mascarpone"
   var sugar = "Sugar"
-  var strawberry = "Strawberry"
+  val strawberry = "Strawberry"
 
-  val ingredientsList = List(mascarpone, sugar, strawberry)
+  var ingredientsList = mutable.MutableList(mascarpone, sugar, strawberry)
 
 
-  def cookDessert(list : List[String] ): String ={
+  /**
+    *
+    * If all ingredients are available, make a dessert
+    */
+  def cookDessert(list : mutable.MutableList[String] ): String ={
     if(list.contains(mascarpone)&& list.contains(sugar) && list.contains(strawberry)){
       "Awesome "+strawberry+" cream"
     }else{
@@ -21,6 +27,20 @@ object PureFunction {
     }
   }
 
+  /**
+    * I love so much strawberries than I eat it as soon I see them
+   */
+  def iAlreadyAteStrawberries()={
+    ingredientsList = ingredientsList.diff(Seq(strawberry))
+  }
+
+  /**
+    * my grandma try to do some strawberry cream  but I already ate it
+    */
+  def tryToCookSomethingWithAGlutton(): String={
+    iAlreadyAteStrawberries()
+    cookDessert(ingredientsList)
+  }
 
 
 }
