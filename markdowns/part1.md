@@ -25,7 +25,7 @@ In this example, we take a list of ingredients and check if we got everything to
 
 
 It seems it doesn't work well: before we execute our code something has changed the ingredients list. 
-The elements of this list are defined as var, but we will prefer to use var, which cannot be modified.
+The elements of this list are defined as var, but we will prefer to use val, which cannot be modified.
 Moreover mutableList is a specific kind of list who can be modified. 
 
 Let's rewrite it to not allow someone to eat all the strawberries

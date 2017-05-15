@@ -4,12 +4,12 @@ plan:
     statement: markdowns/part1.md
   - title: A bite of immutability
     statement: markdowns/part2.md
+  - title: Currying
+    statement: markdowns/part4.md
   - title: Recursion
     statement: markdowns/part3.md
   - title: Lambda
     statement: markdowns/part5.md
-  - title: Currying
-    statement: markdowns/part4.md
   - title: NPE no more
     statement: markdowns/part6.md
   - title: Let's think the future
