@@ -16,8 +16,8 @@ class TestOptionPartTwo  extends FlatSpec with Matchers{
   }
 
   it should "should be weird" in{
-    assert(OptionType.weirdDivide(12.0, 3)==16)
-    assert(OptionType.weirdDivide(12.0, 0)== -1.0)
+    assert(OptionType.squaredDivide(12.0, 3)==16)
+    assert(OptionType.squaredDivide(12.0, 0)== -1.0)
 
   }
 

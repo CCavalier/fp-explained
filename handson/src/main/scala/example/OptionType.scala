@@ -51,9 +51,10 @@ object OptionType {
 
   /**
     * if divide is possible return the square of the result, -1 else
+    * by applying a function to the return of divide
     */
 
-  def weirdDivide(amt: Double, divisor: Double): Double ={
+  def squaredDivide(amt: Double, divisor: Double): Double ={
     ???
   }
 }
