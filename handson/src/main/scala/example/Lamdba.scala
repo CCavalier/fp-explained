@@ -41,7 +41,7 @@ object Lamdba {
   /**
     * a function that will return the sum of the odd number from 1 to a
     */
-  def sumOdd(a : Int): Int ={
+  def sumEven(a : Int): Int ={
     operation(a)(???)
   }
 
