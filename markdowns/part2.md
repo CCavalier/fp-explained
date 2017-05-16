@@ -1,11 +1,11 @@
-# High Order Funcion
+# High Order Function
 
 
-In functionnal programming a function is defined as "first order citizen". 
-It means that it has exactly the same properties than other element : it can be affect to a name or not, return as a result or passed in parameter.
+In functionnal programming a function is defined as a "first order citizen". 
+This means it includes all the properties generally available to any other element, such as the possibility of being affected to a name, returned as a result or passed as a parameter.
 
-It's what we will try now.
-Just implement the greeting function to return "Hello, [name]" if the name is defined, "who are you?" else. 
+This is what we will try now.
+Just implement the greeting function to return "Hello, [name]" if the name is defined, "who are you?" otherwise.
 
 
 @[Greetings]({"stubs":["/src/main/scala/example/Hof.scala"], "command":"example.TestHof"})

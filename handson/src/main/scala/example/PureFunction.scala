@@ -20,22 +20,22 @@ object PureFunction {
     * If all ingredients are available, make a dessert
     */
   def cookDessert(list : mutable.MutableList[String] ): String ={
-    if(list.contains(mascarpone)&& list.contains(sugar) && list.contains(strawberry)){
+    if(list.contains(mascarpone) && list.contains(sugar) && list.contains(strawberry)){
       "Awesome "+strawberry+" cream"
     }else{
-      "it miss something"
+      "it's missing something"
     }
   }
 
   /**
-    * I love so much strawberries than I eat it as soon I see them
+    * I love strawberries so much that I'll eat one as soon I see it
    */
   def iAlreadyAteStrawberries()={
     ingredientList = ingredientList.diff(Seq(strawberry))
   }
 
   /**
-    * my grandma try to do some strawberry cream  but I already ate it
+    * My grandma tried to do some strawberry cream but I already ate it
     */
   def tryToCookSomethingWithAGlutton(): String={
     iAlreadyAteStrawberries()

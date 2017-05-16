@@ -1,6 +1,6 @@
 title : Functionnal Programming explained to my grandma
 plan:
-  - title: A bite of immutability
+  - title: What are functions all about?
     statement: markdowns/part1.md
   - title: What is High Order Function?
     statement: markdowns/part2.md
@@ -12,9 +12,9 @@ plan:
     statement: markdowns/part5.md
   - title: NPE no more
     statement: markdowns/part6.md
-  - title: Let's think the future
+  - title: Let's think of the future
     statement: markdowns/part7.md
 projects:
  hands-on:
   root: handson
-  runner: codingame/sbt-runner:1.0.1
+  runner: codingame/sbt-runner:ii1.0.1
