@@ -12,7 +12,7 @@ object PureFunction {
   var sugar = "Sugar"
   val strawberry = "Strawberry"
 
-  var ingredientsList = mutable.MutableList(mascarpone, sugar, strawberry)
+  var ingredientList = mutable.MutableList(mascarpone, sugar, strawberry)
 
 
   /**
@@ -31,7 +31,7 @@ object PureFunction {
     * I love so much strawberries than I eat it as soon I see them
    */
   def iAlreadyAteStrawberries()={
-    ingredientsList = ingredientsList.diff(Seq(strawberry))
+    ingredientList = ingredientList.diff(Seq(strawberry))
   }
 
   /**
@@ -39,7 +39,7 @@ object PureFunction {
     */
   def tryToCookSomethingWithAGlutton(): String={
     iAlreadyAteStrawberries()
-    cookDessert(ingredientsList)
+    cookDessert(ingredientList)
   }
 
 

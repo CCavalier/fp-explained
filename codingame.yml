@@ -1,8 +1,8 @@
 title : Functionnal Programming explained to my grandma
 plan:
-  - title: What's function is about?
-    statement: markdowns/part1.md
   - title: A bite of immutability
+    statement: markdowns/part1.md
+  - title: What is High Order Function?
     statement: markdowns/part2.md
   - title: Currying
     statement: markdowns/part4.md
