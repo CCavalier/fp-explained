@@ -10,12 +10,12 @@ object CurryingObject {
 
   def multiplyByTwo(x:Int): Int = ???
 
-  def aera(x : Double, y:Double):Double =(x, y) match {
+  def area(x : Double, y:Double):Double =(x, y) match {
     case (_, math.Pi) => x*x*math.Pi
     case (_, _) if x>0 && y>0 => y*x
   }
 
 
-  //let's create circleAera and squareAera from the aera function
+  //let's create circleArea and squareArea from the area function
 
 }

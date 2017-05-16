@@ -17,5 +17,5 @@ Let's implements the specifics case of circle area and square area.
 
 _Please uncomment the tests to enable them_
 
-@[Implement the area computation]({"stubs":["/src/main/scala/example/CurryingObject.scala","/src/main/scala/example/TestComputeAera.scala"], "command":"example.TestComputeAera", "layout": "aside"})
+@[Implement the area computation]({"stubs":["/src/main/scala/example/CurryingObject.scala","/src/test/scala/example/TestComputeArea.scala"], "command":"example.TestComputeArea", "layout": "aside"})
 
