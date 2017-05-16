@@ -17,7 +17,7 @@ object Hof{
   def greetings = ???
 
   /**
-    * should say hello is string is empty, else ask "Who are you"
+    * should say hello if string is empty, else ask "Who are you"
     */
   def helloOrAskName (string: String): String = ???
 /*  def helloOrAskName(string: String): String = {

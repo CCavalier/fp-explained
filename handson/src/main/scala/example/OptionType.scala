@@ -33,7 +33,7 @@ object OptionType {
 
 
   /**
-    * try to define a function who return amt / divisor
+    * try to define a function which returns amt / divisor
     * @param amt amount to divide
     * @param divisor
     * @return an option non if the divisor is 0, a non empty option else
