@@ -1,6 +1,6 @@
 # Pure Function 
 
-Functional programming is all about function, and specifically pure functions.
+Functional programming is all about functions, and specifically pure functions.
 
 Pure function is a function who has no side effect. 
 
@@ -28,7 +28,7 @@ It seems it doesn't work well: before we execute our code something has changed 
 The elements of this list are defined as var, but we will prefer to use val, which cannot be modified.
 Moreover mutableList is a specific kind of list who can be modified. 
 
-Let's rewrite it to not allow someone to eat all the strawberries
+
 
 ```scala
 var x = 0
@@ -37,10 +37,13 @@ x = 2 //perfecly right
 val y = 10
 y = 8 //will not compile
 ```
-
-Let's try to change it: the list must be a List (immutable) and a value
+Let's rewrite it to not allow someone to eat all the strawberries
+We will try to change it: the list must be a List (immutable) and a value
 
 @[Check the ingredients list]({"stubs":["/src/main/scala/example/PureFunction.scala", "/src/test/scala/example/TestPureFunction.scala"], "command":"example.TestPureFunction"})
+
+This code will not compile: we cannot modify a immutable value.
+We should refactor the method. 
 
 In this way no one can change the ingredients of the recipe: if I want some strawberries, I have to buy it.
 

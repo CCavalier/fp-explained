@@ -1,8 +1,8 @@
 # Recursion
 
-Each time we talk about functional programming we speak about recursion.
+One does not simply talk about functional programming without saying the word "recursion"
 
-The first question I ask myself is, why use recursion? 
+The first question I asked myself is, why use recursion? 
 I was bad in mathematics, and I hated recursions in it.
 
 But if we can ask the question on the other side: 
