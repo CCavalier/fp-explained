@@ -3,7 +3,7 @@ package example
 /**
   * Created by charlotte on 13/05/17.
   */
-object Currying {
+object HofSort {
 
   def sort(cmp: (String, String)=>Boolean, list: List[String]):List[String] ={
     list.sortWith(cmp)

@@ -9,10 +9,13 @@ You have a function which takes many parameters, but you could want to bind some
 
 It allows to improve code readability, by partially applying some functions, and giving names to specific uses.
 
-Let's try to implement the following example: we want to use different sorts. So let's try to use the already-implemented sort function to define the other ones.
 
-_ Language tips _
- For this example you can use the wildcard character _ which can match any parameter
+@[Implement the multiply and multiplyByTwo]({"stubs":["/src/main/scala/example/CurryingObject.scala"], "command":"example.TestCurryingObject", "layout": "aside"})
 
-@[Implement the differents sort]({"stubs":["/src/main/scala/example/Currying.scala"], "command":"example.TestCurrying", "layout": "aside"})
+But let's try with a more explicit example: the area function defined take two parameters.
+Let's implements the specifics case of circle area and square area.
+
+_Please uncomment the tests to enable them_
+
+@[Implement the area computation]({"stubs":["/src/main/scala/example/CurryingObject.scala","/src/main/scala/example/TestComputeAera.scala"], "command":"example.TestComputeAera", "layout": "aside"})
 

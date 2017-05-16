@@ -12,3 +12,14 @@ Just implement the greeting function to return "Hello, [name]" if the name is de
 
 
 You have no clue? [Check the scaladoc!] (http://docs.scala-lang.org/tutorials/tour/higher-order-functions.html)
+
+What make high order functions awesome, is this ability to pass a function in parameter. 
+
+Let's try to implement the following example: we want to use different sorts. So let's try to use the already-implemented sort function to define the other ones.
+
+_ Language tips _
+ For this example you can use the wildcard character _ which can match any parameter
+
+@[Implement the differents sort]({"stubs":["/src/main/scala/example/HofSort.scala"], "command":"example.TestHofSort"})
+
+You can use functions map and reduce on the same way.

@@ -17,4 +17,4 @@ plan:
 projects:
  hands-on:
   root: handson
-  runner: codingame/sbt-runner:ii1.0.1
+  runner: techio/sbt-runner:1.0.1
