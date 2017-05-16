@@ -10,7 +10,7 @@ You have a function which takes many parameters, but you could want to bind some
 It allows to improve code readability, by partially applying some functions, and giving names to specific uses.
 
 
-@[Implement the multiply and multiplyByTwo]({"stubs":["/src/main/scala/example/CurryingObject.scala"], "command":"example.TestCurryingObject", "layout": "aside"})
+@[Implement the multiply and multiplyByTwo]({"stubs":["/src/main/scala/example/CurryingObject.scala"], "command":"example.TestCurrying", "layout": "aside"})
 
 But let's try with a more explicit example: the area function defined take two parameters.
 Let's implements the specifics case of circle area and square area.

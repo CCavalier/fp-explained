@@ -5,7 +5,7 @@ import org.scalatest._
 /**
   * Created by charlotte on 09/05/17.
   */
-class TestLamba extends FlatSpec with Matchers{
+class TestLambda extends FlatSpec with Matchers{
   it should "be sum of x first number" in {
     assert(Lamdba.sum(1)== 1)
     assert(Lamdba.sum(2)== 3)
