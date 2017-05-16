@@ -2,7 +2,7 @@
 
 Functional programming is all about functions, and specifically pure functions.
 
-Pure function is a function who has no side effect. 
+A pure function is a function which has no side effect.
 
 _What is a side effect?_ 
 
@@ -18,42 +18,42 @@ For example:
 * Drawing on the screen
 
 
-Let see an example of code submit to a side effect. 
-In this example, we take a list of ingredients and check if we got everything to create a strawberry cream:
+Let's look at an example of code with a side effect.
+In this example, we take a list of ingredients and check if we've got everything to create some strawberry cream:
 
-@[Check the ingredients list]({"stubs":["/src/main/scala/example/PureFunction.scala"], "command":"example.TestPureFunction"})
+@[Check the ingredient list]({"stubs":["/src/main/scala/example/PureFunction.scala"], "command":"example.TestPureFunction"})
 
 
-It seems it doesn't work well: before we execute our code something has changed the ingredients list. 
-The elements of this list are defined as var, but we will prefer to use val, which cannot be modified.
-Moreover mutableList is a specific kind of list who can be modified. 
+It seems this doesn't work well: before we finish executing our code something changes the ingredient list.
+The elements of this list are defined as var, but we will prefer using val, which cannot be modified.
+Moreover mutableList is a specific kind of list which can be modified. 
 
 
 
 ```scala
 var x = 0
-x = 2 //perfecly right
+x = 2 //perfectly fine
 
 val y = 10
 y = 8 //will not compile
 ```
-Let's rewrite it to not allow someone to eat all the strawberries
-We will try to change it: the list must be a List (immutable) and a value
+Let's rewrite it to make it impossible for someone to eat all the strawberries.
+This is what we will change: the list must be a List (immutable) and a value.
 
-@[Check the ingredients list]({"stubs":["/src/main/scala/example/PureFunction.scala", "/src/test/scala/example/TestPureFunction.scala"], "command":"example.TestPureFunction"})
+@[Check the ingredient list]({"stubs":["/src/main/scala/example/PureFunction.scala", "/src/test/scala/example/TestPureFunction.scala"], "command":"example.TestPureFunction"})
 
-This code will not compile: we cannot modify a immutable value.
+This code will not compile: we cannot modify an immutable value.
 We should refactor the method. 
 
-In this way no one can change the ingredients of the recipe: if I want some strawberries, I have to buy it.
+This way no one can change the ingredients of the recipe: if I want some strawberries, I'll just have to buy my own.
 
 ## In a nutshell
 
-The easiest way to visualize what pure function is about is to see it as mathematical functions.
+The easiest way to visualize what pure functions are about is to see them as mathematical functions.
 
-In this path, you know that 2+2 can always be replaced by 4.
+Mathematically, you know that 2+2 can always be replaced by 4.
 
-So it's that we want to have in functional programming.
+That's what we want to reflect with functional programming.
 
 ```
 def add (a: Int, b: Int): Int{
@@ -61,10 +61,10 @@ def add (a: Int, b: Int): Int{
 }
 ``` 
 
-The add function must always can be substitute by his result.
+The add function can always be substituted by its result.
 
-_But, we cannot do application who do nothing!_
+_But, we cannot write applications which do nothing!_
 
 Obviously, we don't.
-But we will keep our changes, modification, i/o operation in specific layers, outside our logics.
-Pure function allows to write smaller parts of code, easier to read, and thus easier to maintain.
+But we will keep our changes, modifications, i/o operation, etc. in specific layers, outside of our logic.
+Pure functions allow us to write smaller parts of code, easier to read, and thus easier to maintain.
