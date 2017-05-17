@@ -24,17 +24,18 @@ object FutureType {
       case Failure(e)     => e.printStackTrace
     }
     // do the rest of your work
-    println("A ..."); Thread.sleep(100)
-    println("B ..."); Thread.sleep(100)
-    println("C ..."); Thread.sleep(100)
-    println("D ..."); Thread.sleep(100)
-    println("E ..."); Thread.sleep(100)
-    println("F ..."); Thread.sleep(100)
+    println("A - Fry the garlic"); Thread.sleep(100)
+    println("B - Cut the onions"); Thread.sleep(100)
+    println("C - Cut the pepper"); Thread.sleep(100)
+    println("D - ..."); Thread.sleep(100)
+    println("E - ..."); Thread.sleep(100)
+    println("F - ..."); Thread.sleep(100)
   }
 
 
   /**
-   * should return the square of the result of the veryLongFunction
+   * should return a Future of true if there is at least 4 tomatoes
+   *  otherwise should return a Future of false
    */
   def enoughTomatoesForACocaPie(cash: Int): Future[Boolean] = {
     val f = Future(buyTomatoes(cash))
