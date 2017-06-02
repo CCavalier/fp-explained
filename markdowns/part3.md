@@ -18,15 +18,28 @@ So recursion is a core feature of a pure functional language.
 Let's try to do a simple exercise to refresh our memory: implement a method which returns a list filled with the x first elements of the Fibonacci sequence.
 
 
+
 @[Implement the Fibonacci sequence]({"stubs":["/src/main/scala/example/Recursion.scala"], "command":"example.TestRecursion", "layout": "aside"})
 
 But with this first example we keep every element in the stack, to rebuild the full list at the end.
 We can do better by using tail recursion.
 
 Tail recursion is a way to build recursion where we don't need to keep each and every step in order to return the final result.
-The last thing you will do is call this function.
+The last thing you will do is call this function. The common way to do that is to use an accumulator.
 
 Let's try to modify our Fibonacci sequence to be a tail recursion
+
+An example of tail rec:
+```scala
+def factorial(n: Int): Int = {
+  def iter(x: Int, result: Int): Int =
+    if (x == 0) result
+    else iter(x - 1, result * x)
+
+  iter(n, 1)
+}
+```
+
 @[Implement Fibonnaci as a tail recursion]({"stubs":["/src/main/scala/example/Recursion.scala"], "command":"example.TestRecursion", "layout": "aside"})
 
 Moreover, the Scala compiler optimizes tail recursion, so we should definitely use it.

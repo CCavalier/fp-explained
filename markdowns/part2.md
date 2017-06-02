@@ -13,6 +13,10 @@ Just implement the greeting function to return "Hello, [name]" if the name is de
 
 You have no clue? [Check the scaladoc!] (http://docs.scala-lang.org/tutorials/tour/higher-order-functions.html)
 
+```scala
+def apply(f: Int => String, v: Int) = f(v)
+```
+
 What make high order functions awesome, is this ability to pass a function in parameter. 
 
 Let's try to implement the following example: we want to use different sorts. So let's try to use the already-implemented sort function to define the other ones.
