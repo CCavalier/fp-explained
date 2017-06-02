@@ -21,7 +21,7 @@ For example:
 Let's look at an example of code with a side effect.
 In this example, we have an URL dynamically built.
 
-@[Check the ingredient list]({"stubs":["/src/main/scala/example/PureFunction.scala"], "command":"example.TestPureFunction"})
+@[Build an URL]({"stubs":["/src/main/scala/example/PureFunctionExercise.scala"], "command":"example.TestPureFunctionNew"})
 
 
 It seems this doesn't work well: the first test passed, but in the second one the url is "http://http:// ...".
