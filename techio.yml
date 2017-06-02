@@ -1,4 +1,4 @@
-title : Functionnal Programming explained to my grandma
+title : Functional Programming explained to my grandma
 plan:
   - title: What are functions all about?
     statement: markdowns/part1.md
