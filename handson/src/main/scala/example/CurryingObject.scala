@@ -17,11 +17,11 @@ object CurryingObject {
 
 
   def circleArea(ray: Double): Double={
-    area(ray, math.Pi)
+   ???
   }
 
   def squareArea(ray: Double): Double={
-    area(ray, ray)
+   ???
   }
 
 
