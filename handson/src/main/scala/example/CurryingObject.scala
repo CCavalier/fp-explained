@@ -16,6 +16,15 @@ object CurryingObject {
   }
 
 
-  //let's create circleArea and squareArea from the area function
+  def circleArea(ray: Double): Double={
+    area(ray, math.Pi)
+  }
+
+  def squareArea(ray: Double): Double={
+    area(ray, ray)
+  }
+
+
+    //let's create circleArea and squareArea from the area function
 
 }

@@ -19,15 +19,17 @@ For example:
 
 
 Let's look at an example of code with a side effect.
-In this example, we take a list of ingredients and check if we've got everything to create some strawberry cream:
+In this example, we have an URL dynamically built.
 
 @[Check the ingredient list]({"stubs":["/src/main/scala/example/PureFunction.scala"], "command":"example.TestPureFunction"})
 
 
-It seems this doesn't work well: before we finish executing our code something changes the ingredient list.
-The elements of this list are defined as var, but we will prefer using val, which cannot be modified.
-Moreover mutableList is a specific kind of list which can be modified. 
+It seems this doesn't work well: the first test passed, but in the second one the url is "http://http:// ...".
+As the url attribute is mutable the url has been change two times.
+This attribute is defined as var, but we will prefer using val, which cannot be modified. 
 
+
+If you change the type of attribute to val, this code will not compile: we cannot modify an immutable value.
 
 
 ```scala
@@ -37,15 +39,10 @@ x = 2 //perfectly fine
 val y = 10
 y = 8 //will not compile
 ```
-Let's rewrite it to make it impossible for someone to eat all the strawberries.
-This is what we will change: the list must be a List (immutable) and a value.
 
-@[Check the ingredient list]({"stubs":["/src/main/scala/example/PureFunction.scala", "/src/test/scala/example/TestPureFunction.scala"], "command":"example.TestPureFunction"})
+We should refactor the method. There is no need to modify the attribute: we don't want a state machine!
 
-This code will not compile: we cannot modify an immutable value.
-We should refactor the method. 
 
-This way no one can change the ingredients of the recipe: if I want some strawberries, I'll just have to buy my own.
 
 ## In a nutshell
 
