@@ -14,13 +14,8 @@ object Hof{
   /**
     * if string is not empty say something, else ask "Who are you"
    */
-  def greetings (string : String, f:(String) => String)= {
-    if(string.isEmpty){
-      "Who are you?"
-    }else{
-      f(string)
-    }
-  }
+  def greetings = ???
+ 
 
   /**
     * should say hello if string is empty, else ask "Who are you"
