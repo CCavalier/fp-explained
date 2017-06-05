@@ -17,4 +17,4 @@ Let's try to use it to define three different functions:
 
 To complete these, let's use lambdas as the parameter of "operation"
 
-@[Implements the different suma]({"stubs":["/src/main/scala/example/Lamdba.scala"], "command":"example.TestLambda", "layout": "aside"})
+@[Implements differents sums]({"stubs":["/src/main/scala/example/Lamdba.scala"], "command":"example.TestLambda", "layout": "aside"})

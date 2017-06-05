@@ -24,25 +24,19 @@ object Lamdba {
   /**
     * a function that will return the sum from 1 to a
     */
-  def sum(a : Int): Int ={
-    operation(a)(x=>x)
-  }
+  def sum(a : Int): Int = ???
 
 
   /**
     * a function that will return the sum of the square from 1 to a
     */
-  def sumSquare(a : Int): Int ={
-    operation(a)(x=>x*x)
-  }
+  def sumSquare(a : Int): Int = ???
 
 
 
   /**
     * a function that will return the sum of the odd number from 1 to a
     */
-  def sumEven(a : Int): Int ={
-    operation(a)(x=> if(x%2 == 0) x else 0)
-  }
+  def sumEven(a : Int): Int = ???
 
 }
