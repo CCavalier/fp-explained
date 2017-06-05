@@ -37,6 +37,6 @@ object Lamdba {
   /**
     * a function that will return the sum of the odd number from 1 to a
     */
-  def sumEven(a : Int): Int = ???
+  def sumOdd(a : Int): Int = ???
 
 }

@@ -21,10 +21,10 @@ class TestLambda extends FlatSpec with Matchers{
   }
 
   it should "be sum of x first odd number" in {
-    assert(Lamdba.sumEven(1)== 0)
-    assert(Lamdba.sumEven(2)== 2)
-    assert(Lamdba.sumEven(3)== 2)
-    assert(Lamdba.sumEven(4)== 6)
-    assert(Lamdba.sumEven(12)== 42)
+    assert(Lamdba.sumOdd(1)== 0)
+    assert(Lamdba.sumOdd(2)== 2)
+    assert(Lamdba.sumOdd(3)== 2)
+    assert(Lamdba.sumOdd(4)== 6)
+    assert(Lamdba.sumOdd(12)== 42)
   }
 }
