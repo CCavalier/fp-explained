@@ -2,7 +2,7 @@
 
 Functional programming is all about functions, and specifically pure functions.
 
-A pure function is a function which has no side effect.
+A pure function is a function which has no side effects.
 
 _What is a side effect?_ 
 

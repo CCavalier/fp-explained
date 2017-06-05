@@ -40,7 +40,7 @@ def factorial(n: Int): Int = {
 }
 ```
 
-@[Implement Fibonnaci as a tail recursion]({"stubs":["/src/main/scala/example/Recursion.scala"], "command":"example.TestRecursion", "layout": "aside"})
+@[Implement Fibonnaci as a tail recursion]({"stubs":["/src/main/scala/example/Recursion.scala"], "command":"example.TestTailRecursion", "layout": "aside"})
 
 Moreover, the Scala compiler optimizes tail recursion, so we should definitely use it.
 
