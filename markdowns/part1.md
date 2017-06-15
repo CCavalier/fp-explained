@@ -3,6 +3,9 @@
 Functional programming is all about functions, and specifically pure functions.
 
 A pure function is a function which has no side effects.
+It has two main characteristics:
+- Whatever happens, if you give the same parameters, you got the same result
+- It will never change its environment
 
 _What is a side effect?_ 
 
@@ -24,12 +27,13 @@ In this example, we have an URL dynamically built.
 @[Build an URL]({"stubs":["/src/main/scala/example/PureFunctionExercise.scala"], "command":"example.TestPureFunctionNew"})
 
 
-It seems this doesn't work well: the first test passed, but in the second one the url is "http://http:// ...".
-As the url attribute is mutable the url has been change two times.
-This attribute is defined as var, but we will prefer using val, which cannot be modified. 
+In this test, I run the "BuildUrl" function twice. It seems this doesn't work well: the first test passed, but in the second one the url is "http://http:// ...". As the url attribute is mutable the url has been changed two times.
 
 
-If you change the type of attribute to val, this code will not compile: we cannot modify an immutable value.
+If we want to transform this function to a pure function, we should remove the affectation and just return the new url. 
+
+Moreover, the url attribute is defined as var, who is mutable. We will prefer using val, which cannot be modified. 
+If you change the type of attribute to val, this code will not compile anymore: we cannot modify an immutable value.
 
 
 ```scala
@@ -39,8 +43,6 @@ x = 2 //perfectly fine
 val y = 10
 y = 8 //will not compile
 ```
-
-We should refactor the method. There is no need to modify the attribute: we don't want a state machine!
 
 
 
@@ -60,8 +62,8 @@ def add (a: Int, b: Int): Int{
 
 The add function can always be substituted by its result.
 
-_But, we cannot write applications which do nothing!_
+_But,if I don't change my datas, my applications will do nothing!_
 
-Obviously, we don't.
+Obviously, we cannot keep everything immutable.
 But we will keep our changes, modifications, i/o operation, etc. in specific layers, outside of our logic.
 Pure functions allow us to write smaller parts of code, easier to read, and thus easier to maintain.

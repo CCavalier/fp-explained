@@ -4,18 +4,19 @@
 Currying is one of the words you will hear the most when you start to work with functionnal programming.
 And it's maybe one of the hardest to figure out.
 
+*Definition: Currying is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument *
+
 To keep it simple, we'll just focus on what currying is useful for.
 You have a function which takes many parameters, but you could want to bind some parameters.
 
 It allows to improve code readability, by partially applying some functions, and giving names to specific uses.
 
 
-@[Implement the multiply and multiplyByTwo]({"stubs":["/src/main/scala/example/CurryingObject.scala"], "command":"example.TestCurrying", "layout": "aside"})
+@[Implement the multiply and multiplyByTwo]({"stubs":["/src/main/scala/example/CurryingObject.scala"], "command":"example.TestCurrying"})
 
-But let's try with a more explicit example: the area function defined take two parameters.
+But let's try with a clearer example: the area function defined take two parameters.
 Let's implements the specifics case of circle area and square area.
 
-_Please uncomment the tests to enable them_
 
-@[Implement the area computation]({"stubs":["/src/main/scala/example/CurryingObject.scala","/src/test/scala/example/TestComputeArea.scala"], "command":"example.TestComputeArea", "layout": "aside"})
+@[Implement the area computation]({"stubs":["/src/main/scala/example/Area.scala"], "command":"example.TestComputeArea"})
 

@@ -10,13 +10,13 @@ class TestComputeArea extends FlatSpec with Matchers {
 
 
   it should "compute circle area" in{
-/*    assert(CurryingObject.circleArea(3) == CurryingObject.area(3, Math.PI))
-    assert(CurryingObject.circleArea(4) == 4*4*math.Pi)*/
+   assert(Area.circleArea(3) == Area.area(3, Math.PI))
+    assert(Area.circleArea(4) == 4*4*math.Pi)
   }
 
   it should "compute square area" in{
-/*    assert(CurryingObject.squareArea(3) == CurryingObject.area(3, 3))
-    assert(CurryingObject.squareArea(4) == 4*4)*/
+    assert(Area.squareArea(3) == Area.area(3, 3))
+    assert(Area.squareArea(4) == 4*4)
   }
 
 

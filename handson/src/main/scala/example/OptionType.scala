@@ -32,21 +32,25 @@ object OptionType {
   val alwaysTrue = maybe.isDefined!=maybe.isEmpty
 
 
+
   /**
     * try to define a function which returns amt / divisor
     * @param amt amount to divide
     * @param divisor
     * @return an option non if the divisor is 0, a non empty option else
     */
-  def divide (amt : Double, divisor: Double): Option[Double] ={
-  ???
+  def divide (amt : Double, divisor: Double): Option[Double] = (amt, divisor) match{
+    case(_,0) => None
+    case(_,_) => Some(amt/divisor)
   }
+
+
 
   /**
     * if divide is possible, return the result of divide, else return 0
     */
   def secureDivide(amt: Double, divisor: Double):Double ={
-   ???
+    divide(amt, divisor).getOrElse(0)
   }
 
   /**
@@ -55,6 +59,6 @@ object OptionType {
     */
 
   def squaredDivide(amt: Double, divisor: Double): Double ={
-    ???
+    divide(amt, divisor).fold(-1.0)(x => x * x)
   }
 }

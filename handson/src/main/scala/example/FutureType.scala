@@ -39,7 +39,7 @@ object FutureType {
    */
   def enoughTomatoesForACocaPie(cash: Int): Future[Boolean] = {
     val f = Future(buyTomatoes(cash))
-    ???
+    f.map(x => if(x>3) true else false)
   }
 
 }

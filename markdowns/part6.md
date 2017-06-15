@@ -8,7 +8,7 @@ And, you know what, they exist in Java!
 
 To keep it simple an option is a wrapper which accepts two kinds of content: 
 * A content "value" which will be return each time that it's possible
-* A "Nul" value which will be return when no correct value can be returned(m
+* A "Nul" value which will be return when no correct value can be returned
 
 In scala an option has no concrete type but two implementations:
 ```scala
