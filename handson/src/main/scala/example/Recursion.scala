@@ -31,17 +31,6 @@ object Recursion {
     *
     */
   def tailFibonacci(size: Int): List[Int]= {
-
-    def fibonacciAcc(step: Int, acc: List[Int]): List[Int]={
-
-      if(step == size){
-        acc
-      }else{
-         fibonacciAcc(step +1, List(acc.head+acc.tail.head) ++ acc)
-      }
-
-    }
-
-    fibonacciAcc(2, List(1, 0))
+  ???
   }
 }
