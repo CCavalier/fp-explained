@@ -1,5 +1,7 @@
 package example
 
+import scala.annotation.tailrec
+
 /**
   * Created by charlotte on 06/05/17.
   */
@@ -27,10 +29,17 @@ object Recursion {
   /***
     * implement an algorithm which returns a list with the X first elements of the Fibonacci sequence ,
     * from bigger to smaller with tail recusion
+    * To implement tail recursion you have to use an inner function with an accumulator
+    *
     * @param size the number of elements you want
     *
     */
   def tailFibonacci(size: Int): List[Int]= {
-  ???
+    @tailrec //this annotation will check at compiling your function is really a tail recursive function
+    def fibonacciAcc(acc: List[Int]):List[Int]={
+      if(acc.size == size) acc
+      else fibonacciAcc(List(acc.head+acc.tail.head)++acc)
+    }
+    fibonacciAcc(List(1)++List(0))
   }
 }

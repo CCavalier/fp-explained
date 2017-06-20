@@ -39,7 +39,11 @@ object OptionType {
     * @param divisor
     * @return an option non if the divisor is 0, a non empty option else
     */
-  def divide (amt : Double, divisor: Double): Option[Double] = ???
+  def divide (amt : Double, divisor: Double): Option[Double] = divisor match{
+      // in this case I just match on the divisor
+    case 0 => None //if the divisor is 0, we don't have any value, so we return a none
+    case _ => Some(amt/divisor) //else we return an option on the result of the operation
+  }
 
 
 
@@ -47,7 +51,8 @@ object OptionType {
     * if divide is possible, return the result of divide, else return 0
     */
   def secureDivide(amt: Double, divisor: Double):Double ={
-    ???
+    //we want to return the value if it's possible and manage the other case
+    divide(amt,divisor).getOrElse(0)
   }
 
   /**
@@ -56,6 +61,7 @@ object OptionType {
     */
 
   def squaredDivide(amt: Double, divisor: Double): Double ={
-    ???
+    //we will apply a function on the value of the option it is available, and return -1.0 otherwise
+    divide(amt, divisor).fold(-1.0)(x=> x*x)
   }
 }

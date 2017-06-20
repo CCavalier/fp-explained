@@ -6,9 +6,9 @@ package example
 object CurryingObject {
 
 
-  def multiply(x : Int, y: Int):Int= ???
+  def multiply(x : Int, y: Int):Int= x * y
 
-  def multiplyByTwo(x:Int): Int = ???
+  def multiplyByTwo(x:Int): Int = multiply(2, x)
 
 
 }

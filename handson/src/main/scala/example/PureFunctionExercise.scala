@@ -5,11 +5,14 @@ package example
   */
 object PureFunctionExercise {
 
-  var url = "tech"
+  // val is an immutable type of data.
+  // var is a mutable type of data
+  // using mutable shared state is BAD
+  // do not use var
+  val url = "tech"
 
   def buildUrl(): String={
-    url = "http://"+url+".io"
-    url
+     "http://"+url+".io"
   }
 
   def useUrl(): String ={
