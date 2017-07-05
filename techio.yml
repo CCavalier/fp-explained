@@ -1,5 +1,7 @@
 title : Functional Programming explained to my grandma
 plan:
+  - title: What you will learn
+    statement: markdowns/about.md
   - title: What are functions all about?
     statement: markdowns/part1.md
   - title: What is High Order Function?
@@ -14,6 +16,8 @@ plan:
     statement: markdowns/part6.md
   - title: Let's think of the future
     statement: markdowns/part7.md
+  - title: That's  all folks!
+    statement: markdowns/conclusion.md
 projects:
  hands-on:
   root: handson
