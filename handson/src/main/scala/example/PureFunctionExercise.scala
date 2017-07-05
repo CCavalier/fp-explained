@@ -9,10 +9,11 @@ object PureFunctionExercise {
   // var is a mutable type of data
   // using mutable shared state is BAD
   // do not use var
-  val url = "tech"
+  var url = "tech"
 
   def buildUrl(): String={
-     "http://"+url+".io"
+    url = "http://"+url+".io"
+    url
   }
 
   def useUrl(): String ={

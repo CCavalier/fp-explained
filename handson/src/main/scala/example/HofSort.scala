@@ -14,21 +14,15 @@ object HofSort {
     else false
   }
   def sortAlphabetically(list: List[String]):List[String]= {
-    // you can use a comparator function as this one
-    sort(comparator, list)
-    // but you can use too an anonymous function who does the same thing
-    //sort((x,y)=> if (x<y) true else false, list)
-    // but you can use too metacharacters as comparators
-    //sort(_<_, list)
+    ??? //TODO use the sort method with a function to comparate elements
   }
 
   def sortReverseAlphabetically(list: List[String]):List[String]={
-    sort(_>_, list)
+    ??? //TODO use the sort method with a function to comparate elements
   }
 
   def sortIncreasingSize(list: List[String]):List[String]={
-    sort(_.size<_.size, list)
+    ??? //TODO use the sort method with a function to comparate elements
   }
-
 
 }

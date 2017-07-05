@@ -13,33 +13,14 @@ object Recursion {
     * @param list the previous elements (empty list at first call)
     * @param size the number of elements you want
     */
-  def fibonacci(list : List[Int], size : Int): List[Int]=(list, size)match{
-
-    case(_, 0) => List()
-    case(_, 1)=> List(0)
-    case(_, 2)=> List(1)++ fibonacci(list, size -1)
-    case(_ ,_) => {
-      if (list.size == size) list
-      else if(list.size == 0) fibonacci(List(1,0), size)
-      else fibonacci(List(list.head+list.tail.head) ++ list,size)
-    }
-  }
+  def fibonacci(list : List[Int], size : Int): List[Int]= ???
 
 
   /***
     * implement an algorithm which returns a list with the X first elements of the Fibonacci sequence ,
     * from bigger to smaller with tail recusion
-    * To implement tail recursion you have to use an inner function with an accumulator
-    *
     * @param size the number of elements you want
     *
     */
-  def tailFibonacci(size: Int): List[Int]= {
-    @tailrec //this annotation will check at compiling your function is really a tail recursive function
-    def fibonacciAcc(acc: List[Int]):List[Int]={
-      if(acc.size == size) acc
-      else fibonacciAcc(List(acc.head+acc.tail.head)++acc)
-    }
-    fibonacciAcc(List(1)++List(0))
-  }
+  def tailFibonacci(size: Int): List[Int]= ???
 }
