@@ -14,9 +14,9 @@ object Area {
   }
 
 
-  def circleArea(radius: Double): Double= ?? //TODO Compute the circle area using the existing method
+  def circleArea(radius: Double): Double= ??? //TODO Compute the circle area using the existing method
 
-  def squareArea(side: Double): Double= ?? //TODO Compute the square area using the existing method
+  def squareArea(side: Double): Double= ??? //TODO Compute the square area using the existing method
 
 
   //let's create circleArea and squareArea from the area function
