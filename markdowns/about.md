@@ -1,4 +1,4 @@
-#Functional programming explained to my grandma
+# Functional programming explained to my grandma
 
 Handson part of the talk "Functional programming explained to my grandma".
 
@@ -6,11 +6,11 @@ Handson part of the talk "Functional programming explained to my grandma".
 - Requirements: Basic knowledge of computer science, java programming can help you (but it's not mandatory) 
 - What will I learn ? What is functional programming and the nice tools that you can use in your every day work
 
-##Improve this content
+## Improve this content
 
 The full source and code of this course [GitHub](https://github.com/CG-Charlotte/fp-explained), please feel free to come up with proposals to improve it.
 
-##What is functional programming?
+## What is functional programming?
 
 Functional programming is a programming paradigmthat treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. 
 
