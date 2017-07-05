@@ -9,7 +9,7 @@ This is what we will try now.
 Just implement the greeting function to return "Hello, [name]" if the name is defined, "who are you?" otherwise.
 
 ## More detailed informations
-[Check the scaladoc!] (http://docs.scala-lang.org/tutorials/tour/higher-order-functions.html)
+[Check the scaladoc!](http://docs.scala-lang.org/tutorials/tour/higher-order-functions.html)
 
 ## How to pass a function as a  parameter?
 ```scala
@@ -25,7 +25,7 @@ What make high order functions awesome, is this ability to pass a function in pa
 
 Let's try to implement the following example: we want to use different sorts. So let's try to use the already-implemented sort function to define the other ones.
 
-_ Language tips _
+_Language tips_
 For this example you can use the wildcard character _ which can match any parameter. It 's useful to compare elements to each other.
 
 @[Implement the differents sort]({"stubs":["/src/main/scala/example/HofSort.scala"], "command":"example.TestHofSort"})
