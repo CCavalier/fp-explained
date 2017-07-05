@@ -4,7 +4,7 @@
 Currying is one of the words you will hear the most when you start to work with functionnal programming.
 And it's maybe one of the hardest to figure out.
 
-*Definition: Currying is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument *
+* Definition: Currying is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument *
 
 To keep it simple, we'll just focus on what currying is useful for.
 You have a function which takes many parameters, but you could want to bind some parameters.
