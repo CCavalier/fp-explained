@@ -5,7 +5,7 @@ package example
   */
 object Lamdba {
 
-  /**
+   /**
     * will apply the f function to the a first integers
     * @param a high limit
     * @param f a function to apply
@@ -24,19 +24,25 @@ object Lamdba {
   /**
     * a function that will return the sum from 1 to a
     */
-  def sum(a : Int): Int = ???
+  def sum(a : Int): Int ={
+    operation(a)(x=>x)
+  }
 
 
   /**
     * a function that will return the sum of the square from 1 to a
     */
-  def sumSquare(a : Int): Int = ???
+  def sumSquare(a : Int): Int ={
+    operation(a)(x=>x*x)
+  }
 
 
 
   /**
     * a function that will return the sum of the odd number from 1 to a
     */
-  def sumOdd(a : Int): Int = ???
+  def sumEven(a : Int): Int ={
+    operation(a)(x=> if(x%2 == 0) x else 0)
+  }
 
 }
