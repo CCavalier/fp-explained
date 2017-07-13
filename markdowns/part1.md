@@ -1,15 +1,15 @@
 # Pure Function 
 
-Functional programming is all about functions, and specifically pure functions.
+Functional programming is all about functions, specifically pure functions.
 
 A pure function is a function which has no side effects.
 It has two main characteristics:
-- Whatever happens, if you give the same parameters, you got the same result
+- If you give the same parameters, you get the same result no matter what
 - It will never change its environment
 
 _What is a side effect?_ 
 
-A function has a side effect if during its execution something is changed.
+A function has a side effect if something is changed during its execution.
 For example:
 
 * Modifying a variable
@@ -21,19 +21,19 @@ For example:
 * Drawing on the screen
 
 
-Let's look at an example of code with a side effect.
+Let's look at an example of a function with a side effect.
 In this example, we have an URL dynamically built.
 
 @[Build an URL]({"stubs":["/src/main/scala/example/PureFunctionExercise.scala"], "command":"example.TestPureFunctionNew"})
 
 
-In this test, I run the "BuildUrl" function twice. It seems this doesn't work well: the first test passed, but in the second one the url is "http://http:// ...". As the url attribute is mutable the url has been changed two times.
+In this test, I run the "BuildUrl" function twice. It seems this doesn't work well: the first test passed, but in the second one the url is "http://http:// ...". As the URL attribute is mutable, the URL has been changed two times.
 
 
-If we want to transform this function to a pure function, we should remove the affectation and just return the new url. 
+If we want to transform this function into a pure function, we should remove the affectation and just return the new URL. 
 
-Moreover, the url attribute is defined as var, who is mutable. We will prefer using val, which cannot be modified. 
-If you change the type of attribute to val, this code will not compile anymore: we cannot modify an immutable value.
+Moreover, the URL attribute is defined as var, which is mutable. We should consider using val, which cannot be modified. 
+If you change the type of attribute to val, this code will not compile anymore. Why? We cannot modify an immutable value.
 
 
 ```scala
@@ -44,11 +44,9 @@ val y = 10
 y = 8 //will not compile
 ```
 
-
-
 ## In a nutshell
 
-The easiest way to visualize what pure functions are about is to see them as mathematical functions.
+The easiest way to visualize what pure functions are all about is to see them as mathematical functions.
 
 Mathematically, you know that 2+2 can always be replaced by 4.
 
@@ -62,8 +60,8 @@ def add (a: Int, b: Int): Int{
 
 The add function can always be substituted by its result.
 
-_But,if I don't change my datas, my applications will do nothing!_
+_But,if I don't change my data, my applications will do nothing!_
 
 Obviously, we cannot keep everything immutable.
-But we will keep our changes, modifications, i/o operation, etc. in specific layers, outside of our logic.
-Pure functions allow us to write smaller parts of code, easier to read, and thus easier to maintain.
+But we will keep our changes, modifications, I/O operation, etc. in specific layers outside of our logic.
+Pure functions allow us to write smaller snippets of code which is easier to read, and thus easier to maintain.
