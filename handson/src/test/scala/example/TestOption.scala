@@ -2,9 +2,6 @@ package example
 
 import org.scalatest._
 
-/**
-  * Created by charlotte on 14/05/17.
-  */
 class TestOption extends FlatSpec with Matchers{
 
   it should "return a none option if divide by zero" in{

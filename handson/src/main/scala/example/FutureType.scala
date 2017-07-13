@@ -5,9 +5,6 @@ import scala.concurrent.Future
 import scala.concurrent.duration._
 import scala.util.{ Failure, Success }
 
-/**
- * Created by charlotte on 14/05/17.
- */
 object FutureType {
 
   val maxTime = Duration(10, SECONDS)

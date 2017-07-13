@@ -6,9 +6,6 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-/**
- * Created by charlotte on 14/05/17.
- */
 class FutureTest2 extends FlatSpec with Matchers {
 
   it should "determine if we can do a pie" in {

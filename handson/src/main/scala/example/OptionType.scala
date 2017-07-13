@@ -1,8 +1,5 @@
 package example
 
-/**
-  * Created by charlotte on 14/05/17.
-  */
 object OptionType {
 
 
