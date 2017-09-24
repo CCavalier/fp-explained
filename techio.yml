@@ -4,7 +4,7 @@ plan:
     statement: markdowns/about.md
   - title: What are functions all about?
     statement: markdowns/part1.md
-  - title: What is High Order Function?
+  - title: What is Higher Order Function?
     statement: markdowns/part2.md
   - title: Currying
     statement: markdowns/part4.md
