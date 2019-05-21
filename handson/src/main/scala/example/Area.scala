@@ -1,8 +1,5 @@
 package example
 
-/**
-  * Created by charlotte on 15/06/17.
-  */
 object Area {
 
 

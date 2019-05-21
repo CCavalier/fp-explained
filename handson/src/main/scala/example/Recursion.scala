@@ -2,9 +2,6 @@ package example
 
 import scala.annotation.tailrec
 
-/**
-  * Created by charlotte on 06/05/17.
-  */
 object Recursion {
 
   /**

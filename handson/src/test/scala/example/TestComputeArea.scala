@@ -1,6 +1,3 @@
-/**
-  * Created by charlotte on 05/05/17.
-  */
 package example
 
 import org.scalatest._

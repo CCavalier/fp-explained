@@ -1,8 +1,5 @@
 package example
 
-/**
-  * Created by charlotte on 01/05/17.
-  */
 import org.scalatest._
 
 class HelloTest extends FlatSpec with Matchers {
